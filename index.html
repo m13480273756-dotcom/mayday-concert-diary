@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>五月天演唱会手账｜然后呢？一起走吧</title>
+  <meta name="description" content="免费在线演唱会手账，记录五月天等演出的日期、城市、场馆、座位、歌单和当时的心情。支持演出信息自动填充、搜索、备份与恢复，数据保存在你自己的浏览器中。">
+  <meta name="keywords" content="五月天演唱会手账,演唱会记录,演唱会歌单,观演日记,Mayday concert diary">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#b9dcf7">
+  <link rel="canonical" href="https://m13480273756-dotcom.github.io/mayday-concert-diary/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="五月天演唱会手账">
+  <meta property="og:title" content="五月天演唱会手账｜然后呢？一起走吧">
+  <meta property="og:description" content="把每一场演唱会写成自己的手账：日期、城市、场馆、歌单，还有当时的心情。">
+  <meta property="og:url" content="https://m13480273756-dotcom.github.io/mayday-concert-diary/">
+  <meta property="og:image" content="https://m13480273756-dotcom.github.io/mayday-concert-diary/assets/collage-stage.jpg">
+  <meta property="og:image:alt" content="演唱会舞台灯光拼贴背景">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="五月天演唱会手账｜然后呢？一起走吧">
+  <meta name="twitter:description" content="记录每一场演唱会，也留住当时的心情。">
+  <meta name="twitter:image" content="https://m13480273756-dotcom.github.io/mayday-concert-diary/assets/collage-stage.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "五月天演唱会手账",
+      "alternateName": "然后呢？一起走吧",
+      "url": "https://m13480273756-dotcom.github.io/mayday-concert-diary/",
+      "description": "免费在线演唱会手账，记录演出日期、城市、场馆、歌单和当时的心情。",
+      "inLanguage": "zh-CN"
+    }
+  </script>
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="collage" aria-hidden="true">
+    <img class="tile tile-1" src="assets/collage-stage.jpg" alt="">
+    <img class="tile tile-2" src="assets/collage-lightsticks.jpg" alt="">
+    <img class="tile tile-3" src="assets/collage-confetti.jpg" alt="">
+    <img class="tile tile-4" src="assets/collage-mic.jpg" alt="">
+    <img class="tile tile-5" src="assets/collage-balloons.jpg" alt="">
+    <img class="tile tile-6" src="assets/collage-lightsticks.jpg" alt="">
+    <img class="tile tile-7" src="assets/collage-confetti.jpg" alt="">
+    <img class="tile tile-8" src="assets/collage-stage.jpg" alt="">
+  </div>
+  <div class="collage-wash" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true">
+          <img class="crown" src="assets/crown.svg" alt="">
+        </div>
+        <div>
+          <h1>然后呢？一起走吧</h1>
+          <p class="subtitle">MAYDAY CONCERT DIARY · 演唱会手账</p>
+        </div>
+      </div>
+      <p class="lyric">“我们都要把自己照顾好，好到遗憾无法打扰。”</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="stats" id="stats" aria-label="统计"></section>
+
+    <section class="toolbar" aria-label="操作">
+      <input id="searchInput" type="search" placeholder="搜索演出、城市、场馆、心情、歌单…" autocomplete="off">
+      <div class="actions">
+        <button id="addBtn" class="btn primary">＋ 添加一场</button>
+        <button id="sampleBtn" class="btn ghost">填入示例</button>
+        <button id="exportBtn" class="btn ghost">导出备份</button>
+        <button id="importBtn" class="btn ghost">导入备份</button>
+        <input type="file" id="importFile" accept=".json,application/json" hidden>
+      </div>
+    </section>
+
+    <section id="list" class="ticket-list hidden" aria-live="polite"></section>
+
+    <section id="emptyState" class="empty">
+      <div id="emptyAll">
+        <div class="empty-star" aria-hidden="true">★</div>
+        <h2>还没有演唱会记录</h2>
+        <p>点击「＋ 添加一场」，输入演出名称（比如「5525鸟巢8.3场」），<br>日期、城市、场馆和歌单会自动帮你填好。<br>也可以先点「填入示例」看看效果。</p>
+        <button id="emptyAddBtn" class="btn primary">＋ 添加一场</button>
+      </div>
+      <div id="emptySearch" class="hidden">
+        <div class="empty-star" aria-hidden="true">♪</div>
+        <h2>没有找到匹配的记录</h2>
+        <p>换个关键词试试吧。</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="site-about" aria-labelledby="aboutTitle">
+    <h2 id="aboutTitle">把每一场演唱会，写成自己的手账</h2>
+    <p>「五月天演唱会手账」是一个免费在线工具。你可以记下看过的每一场演出：日期、城市、场馆、座位、歌单，还有散场后仍留在心里的那一刻。输入演出名称时，手账会自动补充内置场次的日期、城市、场馆和歌单。</p>
+    <p>所有记录只保存在你自己的浏览器里，不需要注册账号。你可以随时搜索旧记录、导出 JSON 备份，或换一台设备后重新导入。</p>
+  </section>
+
+  <footer>
+    <p class="footer-quote">“当你快乐的时候，记得五月天；当你悲伤的时候，也要记得五月天。”</p>
+    <p class="footer-note">你的记录只保存在当前浏览器中 · 换设备前记得「导出备份」哦</p>
+  </footer>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <h2 id="modalTitle">添加一场演唱会</h2>
+      <form id="concertForm">
+        <div class="field span2">
+          <label for="fTour">巡演 / 演出名称</label>
+          <div class="autocomplete">
+            <input id="fTour" name="tour" type="text" placeholder="例：5525鸟巢8.3场、好好好想见到你 武汉…" autocomplete="off">
+            <div id="tourSuggest" class="suggest hidden" role="listbox" aria-label="匹配到的演出"></div>
+          </div>
+          <p class="hint">输入演出名称后，日期、城市、场馆和歌单会自动填好（歌单来自歌迷公开整理，仅供参考），你只需补充当时的心情。</p>
+        </div>
+        <div class="field">
+          <label for="fDate">日期 <span class="req">*</span></label>
+          <input id="fDate" name="date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="fCity">城市</label>
+          <input id="fCity" name="city" type="text" placeholder="例：上海">
+        </div>
+        <div class="field">
+          <label for="fVenue">场馆</label>
+          <input id="fVenue" name="venue" type="text" placeholder="例：上海体育场">
+        </div>
+        <div class="field">
+          <label for="fSeat">座位 / 区域</label>
+          <input id="fSeat" name="seat" type="text" placeholder="例：内场摇滚区 8 排">
+        </div>
+        <div class="field span2">
+          <label for="fSetlist">歌单</label>
+          <textarea id="fSetlist" name="setlist" rows="5" placeholder="每行一首，例如：&#10;1. 孙悟空&#10;2. 星空&#10;3. 倔强"></textarea>
+        </div>
+        <div class="field span2">
+          <label for="fMood">当时的心情 <span class="req">*</span></label>
+          <textarea id="fMood" name="mood" rows="4" required placeholder="那一刻在想什么、和谁一起、有没有哭……"></textarea>
+        </div>
+        <div class="field span2">
+          <span class="rating-label">心动指数</span>
+          <div id="starPicker" class="star-picker" role="radiogroup" aria-label="评分"></div>
+        </div>
+        <div class="form-actions span2">
+          <button type="button" id="cancelBtn" class="btn ghost dark">取消</button>
+          <button type="submit" class="btn primary">保存</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

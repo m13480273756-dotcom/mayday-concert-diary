@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-hidden="true">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a3"/>
+      <stop offset="0.5" stop-color="#f7c948"/>
+      <stop offset="1" stop-color="#d99a1f"/>
+    </linearGradient>
+  </defs>
+  <!-- 冠顶的 +（代表五月天和你） -->
+  <path d="M48 4v20M38 14h20" stroke="url(#gold)" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <circle cx="48" cy="4" r="3" fill="#f7c948"/>
+  <!-- 皇冠主体 -->
+  <path d="M13 60 L20 30 L33 48 L48 22 L63 48 L76 30 L83 60 Z"
+        fill="url(#gold)" stroke="#8a5a00" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="13" y="50" width="70" height="14" rx="4" fill="url(#gold)" stroke="#8a5a00" stroke-width="2.5"/>
+  <!-- 冠顶圆珠 -->
+  <circle cx="20" cy="29" r="4" fill="#ffe9a3" stroke="#8a5a00" stroke-width="2"/>
+  <circle cx="48" cy="21" r="4" fill="#ffe9a3" stroke="#8a5a00" stroke-width="2"/>
+  <circle cx="76" cy="29" r="4" fill="#ffe9a3" stroke="#8a5a00" stroke-width="2"/>
+  <!-- 藏在冠身里的 MAYDAY 字样 -->
+  <text x="48" y="60.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="10" font-weight="bold" letter-spacing="1.5" fill="#7a4a00">MAYDAY</text>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://m13480273756-dotcom.github.io/mayday-concert-diary/sitemap.xml
