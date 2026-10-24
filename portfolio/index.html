@@ -91,25 +91,18 @@
     </a>
     <nav aria-label="主导航">
       <a href="#works">作品</a>
-      <a href="#about">关于</a>
       <a class="nav-project" href="../">五月天手账 ↗</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="eyebrow"><span class="status-dot"></span> SELECTED WORKS · 2026</div>
-      <h1 id="hero-title">把旗舰拆开，<br><em>也把现场留住。</em></h1>
-      <div class="hero-bottom">
-        <p class="hero-copy">这里收集手机影像、数码产品与演唱会现场的作品。既看参数，也看参数无法替代的那一秒。</p>
-        <dl class="hero-stats" aria-label="作品统计">
-          <div><dt>05</dt><dd>作品</dd></div>
-          <div><dt>03</dt><dd>主题</dd></div>
-          <div><dt>∞</dt><dd>现场</dd></div>
-        </dl>
+    <div class="collection-head">
+      <div>
+        <span class="eyebrow">SELECTED WORKS · 2026</span>
+        <h1>作品集</h1>
       </div>
-      <div class="orbit" aria-hidden="true"><span></span></div>
-    </section>
+      <span class="work-count">05 WORKS</span>
+    </div>
 
     <section class="toolbar" aria-label="筛选作品">
       <div class="filters" role="group" aria-label="作品分类">
@@ -135,7 +128,6 @@
         <div class="content">
           <div class="meta"><span>现场影像</span><time datetime="2026-10-18">2026.10.18</time><span>02:20</span></div>
           <h2>林宥嘉广州 6.27</h2>
-          <p class="lead">把一场演出压缩成两分二十秒，也把灯光、合唱和那一刻的情绪留在画面里。</p>
           <blockquote class="caption">林宥嘉广州6.27 #林宥嘉 #超级管家 #演唱会</blockquote>
           <div class="footer-row">
             <span class="credit">发布者：我哪有很俏皮</span>
@@ -153,7 +145,6 @@
         <div class="content">
           <div class="meta"><span>互动网页</span><span>Web App</span></div>
           <h2>五月天演唱会手账</h2>
-          <p class="lead">「然后呢？一起走吧」——把每一场演唱会写成自己的手账。</p>
           <div class="caption long-copy">
             <p>「五月天演唱会手账」是一个免费在线工具。你可以记下看过的每一场演出：日期、城市、场馆、座位、歌单，还有散场后仍留在心里的那一刻。输入演出名称时，手账会自动补充内置场次的日期、城市、场馆和歌单。</p>
             <p>所有记录只保存在你自己的浏览器里，不需要注册账号。你可以随时搜索旧记录、导出 JSON 备份，或换一台设备后重新导入。</p>
@@ -174,7 +165,6 @@
         <div class="content">
           <div class="meta"><span>数码影像</span><time datetime="2026-05-19">2026.05.19</time></div>
           <h2>万元级旗舰对决：贵 2500 元，值不值？</h2>
-          <p class="lead">从价格、长焦、电池到防护规格，拆解 iPhone 17 Pro Max 与华为 Pura 90 Pro Max 的选择题。</p>
           <blockquote class="caption">降价也拦不住参数内卷？在万元级旗舰战场，苹果iPhone 17 Pro Max即便给出618特惠降价，门槛仍比华为Pura 90 Pro Max高出2500元。而华为还有超越感官的2亿长焦、6000毫安时大电池与IP69满级防护强势宣战。#苹果 #iPhone17PM #华为 #Pura90PM #摄影旗舰 #旗舰手机</blockquote>
           <div class="footer-row">
             <span class="credit">视频号：斗机 · 广州</span>
@@ -192,7 +182,6 @@
         <div class="content">
           <div class="meta"><span>数码影像</span><time datetime="2026-04-16">2026.04.16</time></div>
           <h2>Pocket 4：只贵 200 元，生产力跃升多少？</h2>
-          <p class="lead">3700 万像素、4K/240fps、10bit D-Log 与 107G 内置存储，一次代际升级到底改变了什么。</p>
           <blockquote class="caption">仅200元差价，Pocket 4完成生产力跃升，3700万像素、4K/240fps、10bit D-log拔高视频上限，107G内置存储连存储卡都省了！面对高性价比换代，专业创作者是果断升级，还是压榨3代残值？#大疆 #Pocket4 #Pocket3 #手持云台相机 #专业摄影</blockquote>
           <div class="footer-row">
             <span class="credit">视频号：斗机 · 广州</span>
@@ -210,7 +199,6 @@
         <div class="content">
           <div class="meta"><span>数码影像</span><time datetime="2026-06-12">2026.06.12</time></div>
           <h2>一英寸底之争：Pocket 4 还是 Luna Ultra？</h2>
-          <p class="lead">2999 元与 4705 元之间，8K 双徕卡究竟能不能值回票价？</p>
           <blockquote class="caption">都是1英寸底，Pocket 4卖2999，Luna Ultra敢卖4705——8K双徕卡真能值回票价？口袋轻便党看完沉默了，你钱包扛得住吗？#大疆 #影石 #云台摄影机 #Pocket4 #LunaUltra #Pocket云台</blockquote>
           <div class="footer-row">
             <span class="credit">视频号：斗机 · 广州</span>
@@ -222,16 +210,6 @@
 
     <p id="empty-results" class="empty-results" hidden>没有匹配的作品，换个关键词试试。</p>
 
-    <section id="about" class="about reveal" aria-labelledby="about-title">
-      <div>
-        <span class="section-label">ABOUT THE WORK</span>
-        <h2 id="about-title">关于这组作品</h2>
-      </div>
-      <div class="about-copy">
-        <p>这组作品围绕两个方向展开：产品如何被使用，以及现场如何被记住。数码视频关注真实的规格差异与购买决策，演唱会内容则保留声音、灯光与人群共同制造的瞬间。</p>
-        <p>页面中的图片用于作品预览；完整视频与最新内容请前往抖音或微信视频号。五月天演唱会手账可直接在线体验，无需注册。</p>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
