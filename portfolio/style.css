@@ -99,13 +99,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
 }
-.brand-en {
-  margin-left: 8px;
-  color: var(--ink-soft);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: .24em;
-}
 nav { display: flex; align-items: center; gap: 26px; font-size: 14px; }
 nav a {
   text-decoration: none;
@@ -350,7 +343,6 @@ h2 {
     width: min(calc(100% - 28px), var(--max));
   }
   .collection-head h1 { font-size: 46px; }
-  .brand-en { display: none; }
   .footer-row { align-items: flex-start; flex-direction: column; }
 }
 
