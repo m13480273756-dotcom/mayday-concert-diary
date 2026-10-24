@@ -146,6 +146,34 @@ h1 {
   font-style: italic;
 }
 
+.portfolio-entry {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 9px 16px;
+  color: var(--navy);
+  background: rgba(255, 255, 255, .56);
+  border: 1px solid rgba(18, 58, 107, .16);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 5px 16px rgba(18, 58, 107, .08);
+  transition: background .2s ease, transform .2s ease;
+}
+
+.portfolio-entry:hover,
+.portfolio-entry:focus-visible {
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.portfolio-entry span {
+  color: #1c8ef5;
+  font-size: 16px;
+}
+
 /* ---------- 主体 ---------- */
 .container {
   position: relative;
